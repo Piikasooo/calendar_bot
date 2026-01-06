@@ -1,6 +1,8 @@
 services:
-  bot:
+  calendar_bot:
     build: .
     restart: always
     env_file:
       - .env
+    networks:
+      - scanflow_default
