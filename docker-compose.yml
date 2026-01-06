@@ -6,3 +6,6 @@ services:
       - .env
     networks:
       - scanflow_default
+networks:
+  scanflow_default:
+    external: true
